@@ -25,7 +25,6 @@ export class FormComponent implements OnInit {
     })
   }
   onSubmit() {
-    // aqui você pode implementar a logica para fazer seu formulário salvar
     console.log(this.formProduto.value);
     this.produtos.push(this.formProduto.value);
     this.formProduto.reset(new Produto());
